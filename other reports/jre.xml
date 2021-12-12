@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="14.82616">
+<testcase classname="To validate the login functionality of fb applicaion" name="To validate the login with invalid password and invalid username" time="9.779909">
+<system-out><![CDATA[When : To launch the url....................................................passed
+And : To pass the invalid name in Name Textbox..............................passed
+And : To pass the invalid value in password Textbox.........................passed
+And : To click the login button.............................................passed
+And : To check whether its navigate to homepage or not......................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the login functionality of fb applicaion" name="To validate the login with datatable password and invalid username" time="5.046251">
+<failure message="junit.framework.AssertionFailedError&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:55)&#13;&#10;&#9;at junit.framework.Assert.assertTrue(Assert.java:22)&#13;&#10;&#9;at junit.framework.Assert.assertTrue(Assert.java:31)&#13;&#10;&#9;at org.stepdefinition.Datatable1.to_pass_the_valid_value_in_password_Textbox_db(Datatable1.java:39)&#13;&#10;&#9;at ✽.: To pass the valid value in password Textbox db(src/test/resources/File.feature:40)&#13;&#10;"><![CDATA[When : To launch the url db.................................................passed
+And : To pass the valid name in Name Textbox db.............................passed
+And : To pass the valid value in password Textbox db........................failed
+And : To click the login button db..........................................skipped
+
+StackTrace:
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at org.stepdefinition.Datatable1.to_pass_the_valid_value_in_password_Textbox_db(Datatable1.java:39)
+	at ✽.: To pass the valid value in password Textbox db(src/test/resources/File.feature:40)
+]]></failure>
+</testcase>
+</testsuite>
